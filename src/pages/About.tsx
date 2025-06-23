@@ -9,25 +9,25 @@ const About = () => {
       {/* Main Content */}
       <main className="relative">
         {/* Hero Section */}
-        <section className="w-full px-[88px] py-[80px] bg-gradient-to-r from-[#B8E6FF] to-[#B8E6FF]">
+        <section className="w-full px-4 sm:px-8 lg:px-[88px] py-8 sm:py-16 lg:py-[80px] bg-gradient-to-r from-[#B8E6FF] to-[#B8E6FF]">
           <div className="max-w-[1552px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Left Content */}
-              <div className="space-y-6">
-                <h1 className="font-inria text-[48px] font-bold leading-tight text-black">
+              <div className="space-y-6 order-2 lg:order-1">
+                <h1 className="font-inria text-3xl sm:text-4xl lg:text-[48px] font-bold leading-tight text-black">
                   Klausos negalios šeimų bendrija
                   <br />
                   <span className="text-aidas-blue">„Aidas"</span>
                 </h1>
-                <p className="font-inria text-lg text-black max-w-[400px]">
+                <p className="font-inria text-base sm:text-lg text-black max-w-[400px]">
                   Bendruomenė, skirta klausos negalią turinčių šeimų palaikymui,
                   pagalbai ir tarpusavio bendravimui
                 </p>
               </div>
 
               {/* Right Content - Image */}
-              <div className="flex justify-end">
-                <div className="w-[400px] h-[300px] rounded-[32px] overflow-hidden bg-gray-200 flex items-center justify-center">
+              <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                <div className="w-full max-w-[400px] h-[300px] rounded-[32px] overflow-hidden bg-gray-200 flex items-center justify-center">
                   <div className="text-gray-500 text-center">
                     <p>Community Image</p>
                   </div>
