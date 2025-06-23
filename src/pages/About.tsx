@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-[#B8E6FF] to-white">
+    <div className="w-full">
       <Header />
 
       {/* Main Content */}
