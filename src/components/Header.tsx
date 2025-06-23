@@ -4,22 +4,22 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="w-full h-[118px] border border-black bg-white flex items-center justify-between px-[85px]">
+    <header className="w-full min-h-[118px] border border-black bg-white flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 lg:px-[85px] py-4 sm:py-0">
       {/* Logo */}
-      <div className="flex items-center">
-        <div className="w-[145px] h-[97px] flex items-center justify-center">
+      <div className="flex items-center mb-4 sm:mb-0">
+        <div className="w-[120px] sm:w-[145px] h-[80px] sm:h-[97px] flex items-center justify-center">
           {/* Logo placeholder - will be updated when we have the actual logo */}
-          <div className="text-aidas-blue font-inria font-bold text-2xl">
+          <div className="text-aidas-blue font-inria font-bold text-xl sm:text-2xl">
             aidas
           </div>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="flex items-center gap-8">
+      <nav className="flex items-center gap-2 sm:gap-4 lg:gap-8">
         <Link
           to="/"
-          className={`flex items-center justify-center w-[157px] h-[101px] font-inria text-2xl font-bold text-center ${
+          className={`flex items-center justify-center w-[120px] sm:w-[157px] h-[60px] sm:h-[101px] font-inria text-lg sm:text-2xl font-bold text-center ${
             location.pathname === "/"
               ? "text-aidas-blue"
               : "text-black hover:text-aidas-blue transition-colors"
@@ -29,7 +29,7 @@ const Header = () => {
         </Link>
         <Link
           to="/apie-mus"
-          className={`flex items-center justify-center w-[157px] h-[101px] font-inria text-2xl font-bold text-center ${
+          className={`flex items-center justify-center w-[120px] sm:w-[157px] h-[60px] sm:h-[101px] font-inria text-lg sm:text-2xl font-bold text-center ${
             location.pathname === "/apie-mus"
               ? "text-aidas-blue"
               : "text-black hover:text-aidas-blue transition-colors"
