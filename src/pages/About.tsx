@@ -11,17 +11,14 @@ const About = () => {
         {/* Hero Section */}
         <section className="w-full px-4 sm:px-8 lg:px-[88px] py-8 sm:py-16 lg:py-[80px] bg-gradient-to-r from-[#B8E6FF] to-[#B8E6FF]">
           <div className="max-w-[1552px] mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              {/* Left Content */}
-              <div className="space-y-6 order-2 lg:order-1">
-                <h1 className="font-inria text-3xl sm:text-4xl lg:text-[48px] font-bold leading-tight text-black">
-                  Apie <span className="text-aidas-blue">„Aidas"</span>
-                </h1>
-                <p className="font-inria text-base sm:text-lg text-black max-w-[400px]">
-                  Klausos negalios šeimų bendrija „Aidas" - tai bendruomenė,
-                  skirta klausos negalią turinčių šeimų palaikymui ir pagalbai
-                </p>
-              </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="font-inria text-3xl sm:text-4xl lg:text-[48px] font-bold leading-tight text-black">
+                Apie <span className="text-aidas-blue">„Aidas"</span>
+              </h1>
+              <p className="font-inria text-base sm:text-lg text-black max-w-[600px] mt-6">
+                Klausos negalios šeimų bendrija „Aidas" - tai bendruomenė,
+                skirta klausos negalią turinčių šeimų palaikymui ir pagalbai
+              </p>
             </div>
           </div>
         </section>
