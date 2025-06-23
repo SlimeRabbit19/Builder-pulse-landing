@@ -3,8 +3,9 @@ const Footer = () => {
     <footer className="w-full min-h-[255px] bg-[#F5F5F5] flex flex-col items-center justify-center py-8 px-4">
       {/* Logo */}
       <div className="w-[107px] h-[71px] flex items-center justify-center mb-6">
-        <div className="text-aidas-blue font-inria font-bold text-xl">
-          aidas
+        {/* Logo placeholder - replace this div with actual logo image */}
+        <div className="w-full h-full bg-gray-200 rounded flex items-center justify-center">
+          <span className="text-gray-500 text-sm">Logo</span>
         </div>
       </div>
 

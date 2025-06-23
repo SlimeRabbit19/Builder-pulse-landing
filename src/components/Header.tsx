@@ -8,9 +8,9 @@ const Header = () => {
       {/* Logo */}
       <div className="flex items-center mb-4 sm:mb-0">
         <div className="w-[120px] sm:w-[145px] h-[80px] sm:h-[97px] flex items-center justify-center">
-          {/* Logo placeholder - will be updated when we have the actual logo */}
-          <div className="text-aidas-blue font-inria font-bold text-xl sm:text-2xl">
-            aidas
+          {/* Logo placeholder - replace this div with actual logo image */}
+          <div className="w-full h-full bg-gray-200 rounded flex items-center justify-center">
+            <span className="text-gray-500 text-sm">Logo Image</span>
           </div>
         </div>
       </div>
