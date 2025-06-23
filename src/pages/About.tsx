@@ -38,15 +38,15 @@ const About = () => {
         </section>
 
         {/* Mission Section */}
-        <section className="w-full px-[88px] py-[80px] bg-white">
+        <section className="w-full px-4 sm:px-8 lg:px-[88px] py-12 sm:py-16 lg:py-[80px] bg-white">
           <div className="max-w-[1200px] mx-auto text-center">
             <div className="w-12 h-12 bg-aidas-blue rounded-full flex items-center justify-center mx-auto mb-8">
               <div className="w-6 h-6 bg-white rounded-full"></div>
             </div>
-            <h2 className="font-inria text-[36px] font-bold text-black mb-8">
+            <h2 className="font-inria text-2xl sm:text-3xl lg:text-[36px] font-bold text-black mb-8">
               Mūsų misija
             </h2>
-            <p className="font-inria text-lg text-black/70 max-w-[800px] mx-auto">
+            <p className="font-inria text-base sm:text-lg text-black/70 max-w-[800px] mx-auto">
               Siekiame sukurti stiprią ir palaikančią bendruomenę, kuri padėtų
               klausos negalią turinčioms šeimoms jaustis supratoms, palaikomoms
               ir integruotoms visuomenėje.
@@ -55,15 +55,15 @@ const About = () => {
         </section>
 
         {/* Vision Section */}
-        <section className="w-full px-[88px] py-[80px] bg-gray-50">
+        <section className="w-full px-4 sm:px-8 lg:px-[88px] py-12 sm:py-16 lg:py-[80px] bg-gray-50">
           <div className="max-w-[1200px] mx-auto text-center">
             <div className="w-12 h-12 bg-aidas-blue rounded-full flex items-center justify-center mx-auto mb-8">
               <div className="w-6 h-6 bg-white rounded-full"></div>
             </div>
-            <h2 className="font-inria text-[36px] font-bold text-black mb-8">
+            <h2 className="font-inria text-2xl sm:text-3xl lg:text-[36px] font-bold text-black mb-8">
               Mūsų vizija
             </h2>
-            <p className="font-inria text-lg text-black/70 max-w-[800px] mx-auto">
+            <p className="font-inria text-base sm:text-lg text-black/70 max-w-[800px] mx-auto">
               Stipri bendruomeniškai ir socialiai lygiaveriška aplinka auginti
               vaikus su klausos negalia.
             </p>
@@ -156,7 +156,7 @@ const About = () => {
                   Parama ir supratimas
                 </h3>
                 <p className="font-inria text-base text-black/70">
-                  Teikiame emocinę paramą ir praktišką pagalbą šeimoms,
+                  Teikiame emocinę param�� ir praktišką pagalbą šeimoms,
                   susidūrusioms su klausos negalios iššūkiais.
                 </p>
               </div>
