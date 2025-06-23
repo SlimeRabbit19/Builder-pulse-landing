@@ -18,6 +18,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        inria: [
+          "Inria Sans",
+          "system-ui",
+          "-apple-system",
+          "Roboto",
+          "Helvetica",
+          "sans-serif",
+        ],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -28,6 +38,8 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        "aidas-blue": "#008DCB",
+        "aidas-light-blue": "#00A1E9",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
