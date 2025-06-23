@@ -39,13 +39,7 @@ const Index = () => {
                     backgroundImage:
                       "url(https://cdn.builder.io/api/v1/image/assets%2F798047acf0eb4eac841acf7aa9d1acd8%2F8fe185fdfd2547ddaea61e4f62aa052f)",
                   }}
-                >
-                  {/* Placeholder for hero image */}
-                  <div className="text-gray-500 text-center">
-                    <p className="text-lg">Hero Image</p>
-                    <p className="text-sm">745x559px</p>
-                  </div>
-                </div>
+                />
               </div>
             </div>
           </div>
