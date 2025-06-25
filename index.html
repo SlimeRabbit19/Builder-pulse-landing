@@ -4,11 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aidas - Klausos negalios šeimų bendrija</title>
+    <meta
+      name="description"
+      content="Klausos negalios šeimų bendrija Aidas - bendruomenė, skirta klausos negalią turinčių šeimų palaikymui ir pagalbai"
+    />
+    <style>
+      /* Loading fallback */
+      .loading-fallback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0.8) 28%,
+          rgba(0, 161, 233, 0.8) 192%
+        );
+      }
+      .loading-text {
+        text-align: center;
+        color: #333;
+      }
+      /* Hide fallback when React loads */
+      #root:not(:empty) + .loading-fallback {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
 
+    <!-- Fallback content if JavaScript fails to load -->
+    <div class="loading-fallback">
+      <div class="loading-text">
+        <h1>Aidas</h1>
+        <p>Klausos negalios šeimų bendrija</p>
+        <p><small>Loading...</small></p>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Debug script for GitHub Pages -->
+    <script>
+      // Add error logging
+      window.addEventListener("error", function (e) {
+        console.error("Script error:", e.error);
+        document.querySelector(".loading-fallback .loading-text").innerHTML +=
+          '<br><small style="color: red;">Error loading app. Please refresh the page.</small>';
+      });
+
+      // Check if module is loading
+      setTimeout(function () {
+        if (document.getElementById("root").innerHTML.trim() === "") {
+          console.warn("App did not load after 3 seconds");
+          document.querySelector(".loading-fallback .loading-text").innerHTML +=
+            '<br><small style="color: orange;">App is taking longer than expected to load...</small>';
+        }
+      }, 3000);
+    </script>
   </body>
 </html>
